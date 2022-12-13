@@ -16,7 +16,7 @@ def default():
 
 @app.route('/characters')
 def show_characters():
-    return data['characters']
+    return data['characters'], 200
 
 @app.route('/character', methods = ['GET', 'POST'])
 def create_character():
